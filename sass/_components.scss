@@ -63,32 +63,54 @@
 ///////////////////////////////////////////////
 /// USER NAVIGATION
 .user-nav {
-  margin-right: 3rem;
+  align-self: stretch;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 0 0 20%;
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: $color-grey-light-3;
+  }
+
   &__icon-box {
-    margin-right: 3rem;
+    position: relative;
   }
 
   &__icon {
     height: 2.5rem;
     width: 2.5rem;
+    fill: $color-grey-dark-2;
   }
 
   &__notification {
-  }
-
-  &__user-box {
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: $color-primary;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    // center the text using flex box
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
   }
 
   &__user-photo {
-    width: 6rem;
-    height: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
-  }
-
-  &__user-name {
+    margin-right: 1rem;
   }
 }
