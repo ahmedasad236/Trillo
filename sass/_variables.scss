@@ -16,4 +16,11 @@ $color-grey-dark-3: #999;
 $shadow-dark: rgba(
   $color: #000000,
   $alpha: 0.3,
-); ;
+);
+
+$shadow-light: rgba(
+  $color: #000000,
+  $alpha: 0.08,
+);
+
+$line: 1px solid $color-grey-light-2;
