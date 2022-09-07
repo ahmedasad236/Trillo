@@ -193,3 +193,113 @@
     font-size: 1.4rem;
   }
 }
+
+/////////////////////////////////////////////////////////////////
+/// GALLERY
+.gallery {
+  display: flex;
+
+  &__item {
+    flex: 1 1 33.333%;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+}
+
+////////////////////////////////////////////////////////////////
+/// HOTEL OVERVIEW
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-grey-light-2;
+  &__hotel-name {
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+    color: $color-grey-dark-3;
+  }
+
+  &__hotel-stars {
+    margin-right: auto;
+    display: flex;
+  }
+
+  &__hotel__stars-icon,
+  &__hotel__location-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary;
+  }
+
+  &__hotel__location {
+    margin-right: 3rem;
+    //background-color: orange;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 1.3rem;
+  }
+
+  &__rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    color: $color-grey-light-2;
+    align-self: stretch;
+    padding: 0 2.5rem;
+    &-average {
+      font-size: 3rem;
+      font-weight: 300;
+    }
+
+    &-count {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.btn-inline {
+  color: $color-primary;
+  border: none;
+  background-color: transparent;
+  padding-bottom: 3px;
+  border-bottom: 1px solid currentColor;
+  font-size: inherit;
+  transition: all 0.3s;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    color: $color-grey-dark-1;
+    border-bottom: 1px solid $color-grey-dark-1;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(#000000, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
