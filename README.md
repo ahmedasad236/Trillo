@@ -12,4 +12,5 @@
     <li>HTML</li>
     <li>Advanced CSS using Flexbox</li>
     <li>SASS</li>
+    <li>Responsive Design</li>
 </ul>
